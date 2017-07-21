@@ -25,8 +25,8 @@ Taking input for the username and playlist title, we would use that information 
 
 ### Other Possibilities with the API
 Here's a list of Data Science projects that implement Spotify's Web API:
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjZv4n-n5nVAhWIrD4KHT_hB7QQFggwMAE&url=https%3A%2F%2Fmedium.com%2F%40polomarcus%2Fmusic-recommendation-service-with-the-spotify-api-spark-mllib-and-databricks-7cde9b16d35d&usg=AFQjCNFLJiBdVeAEJw5Vc1q1t_WoEgdaLw
-https://www.google.com/search?q=data+science+with+spotify+api&rlz=1CASMAB_enUS722US722&oq=data+s&aqs=chrome.4.69i57j69i61j69i60l2j35i39l2.6682j0j4&sourceid=chrome&ie=UTF-8#
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwjZv4n-n5nVAhWIrD4KHT_hB7QQFghCMAQ&url=http%3A%2F%2Fblog.nycdatascience.com%2Fstudent-works%2Fexplorify-visualize-playlists%2F&usg=AFQjCNGj0ZMNHYfOppOgrOSgucmIvwP8JA
+[R Project](http://rcharlie.com/2017-02-16-fitteR-happieR/) 
+[Another R Project](https://www.r-bloggers.com/my-new-r-package/)
+[NYC Data Academy's Project](http://blog.nycdatascience.com/student-works/explorify-visualize-playlists/)
 
 

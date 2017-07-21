@@ -19,6 +19,14 @@ After having a grasp on API's and their functionality, we would need to know how
 
 Whatever lanuage we decide to do, we will inevitably be dealing with Spotify's own [Web API](https://developer.spotify.com/web-api/). There, we can sign up for an authentication key and understand all the different endpoints Spotify provides for us. Going through the documentation will give us a better stance of what is possible and hopefully serve inspiration for the scope of the project. 
 
-### How-To 
+### The Script's Functionality
+
+Taking input for the username and playlist title, we would use that information to extract data about the playlist. We would then make a [dataframe](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) of the song titles and bpm's and use [numpy's normal function](https://stackoverflow.com/questions/20011494/plot-normal-distribution-with-matplotlib) to have a data frame of our new playlist. We would then use the API and create a new playlist in the order of our new dataframe. 
+
+### Other Possibilities with the API
+Here's a list of Data Science projects that implement Spotify's Web API:
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjZv4n-n5nVAhWIrD4KHT_hB7QQFggwMAE&url=https%3A%2F%2Fmedium.com%2F%40polomarcus%2Fmusic-recommendation-service-with-the-spotify-api-spark-mllib-and-databricks-7cde9b16d35d&usg=AFQjCNFLJiBdVeAEJw5Vc1q1t_WoEgdaLw
+https://www.google.com/search?q=data+science+with+spotify+api&rlz=1CASMAB_enUS722US722&oq=data+s&aqs=chrome.4.69i57j69i61j69i60l2j35i39l2.6682j0j4&sourceid=chrome&ie=UTF-8#
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=5&cad=rja&uact=8&ved=0ahUKEwjZv4n-n5nVAhWIrD4KHT_hB7QQFghCMAQ&url=http%3A%2F%2Fblog.nycdatascience.com%2Fstudent-works%2Fexplorify-visualize-playlists%2F&usg=AFQjCNGj0ZMNHYfOppOgrOSgucmIvwP8JA
 
 

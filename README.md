@@ -25,8 +25,11 @@ Taking input for the username and playlist title, we would use that information 
 
 ### Other Possibilities with the API
 Here's a list of Data Science projects that implement Spotify's Web API:
+
 [R Project](http://rcharlie.com/2017-02-16-fitteR-happieR/) 
+
 [Another R Project](https://www.r-bloggers.com/my-new-r-package/)
+
 [NYC Data Academy's Project](http://blog.nycdatascience.com/student-works/explorify-visualize-playlists/)
 
 

@@ -9,6 +9,7 @@ Ask for user name and password and implement Scopes
 
 ## 2. Grab Playlists
 point api to /v1/users/{user_id}/playlists using requests (http://www.pythonforbeginners.com/scripts/using-the-youtube-api/)
+
 https://developer.spotify.com/web-api/get-list-users-playlists/
 
 ## 3. Present list of Playlist to User 

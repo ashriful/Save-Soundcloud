@@ -4,25 +4,38 @@ import os
 import json
 import time
 import serial
+import base64
 from bs4 import BeautifulSoup
-from flask import Flask, jsonify
+from flask import Flask
+import json
 
 
 AUTH_URL = 'https://accounts.spotify.com/authorize'
 TOKEN_URL = 'https://accounts.spotify.com/api/token'
 URL = 'https://api.spotify.com'
-REDIRECT_URI = "http://127.0.0.1:8888/callback"
+REDIRECT_URI = "http://localhost:8888"
 
 CLIENT_ID = 'ab33af147e5b4cf689dae74fa5e21710'
 CLIENT_SECRET = '8fe4c00ac62045e6ac5240b78c62c794'
 temp1 = CLIENT_ID + ":"+ CLIENT_SECRET
+temp2 = temp1.encode('utf-8','strict')
+HEADER_64 = base64.standard_b64encode(temp2)
 CLIENT_AUTH = requests.auth.HTTPBasicAuth(CLIENT_ID,CLIENT_SECRET)
-HEADERS = {'client_id':CLIENT_ID, 'response_type':'token', 'redirect_uri':REDIRECT_URI}
-SCOPE = {}
+HEADERS = {'client_id':CLIENT_ID, 'response_type':'code', 'redirect_uri':REDIRECT_URI}
 
-# print('Begin Program')
 
-# r = requests.get(AUTH_URL,params=HEADERS)
+print('Begin Program')
+
+
+PARAMS = {'grant_type':'client_credentials'}
+HEADERS = {'Authorization':b'Basic '+HEADER_64}
+r = requests.post(TOKEN_URL, data=PARAMS, headers=HEADERS)
+# print(r.headers)
+dict = json.loads(r.content)
+print(dict['access_token'])
+
+
+# r = requests.get(AUTH_URL,params=HEADERS
 # print(r.url)
 # print(r.headers)
 # print(r.status_code)
@@ -31,7 +44,7 @@ SCOPE = {}
 
 
 
-### Obtain Permanent Authorization: Learn later
+# ## Obtain Permanent Authorization: Learn later
 # s = requests.Session()
 # r = s.get(AUTH_URL, data=HEADERS)
 # print(r.status_code)
@@ -39,11 +52,10 @@ SCOPE = {}
 # print(r.headers)
 # print(r.url)
 
-## Token Authorization.
-HEADERS = {'client_id':CLIENT_ID, 'client_secret':CLIENT_SECRET}
-PARAMS = {'grant_type':'client_credentials'}
-r = requests.post(TOKEN_URL,params=PARAMS, headers = HEADERS)
-print(r.text)
+# ## Token Authorization.
+# HEADERS = {'client_id':CLIENT_ID, 'client_secret':CLIENT_SECRET}
+# r = requests.post(TOKEN_URL,params=PARAMS, headers = HEADERS)
+# print(r.text)
 
 # ### r.headers
 

@@ -2,11 +2,11 @@ import requests
 import io
 import os
 import json
-import time
-import serial
+# import time
+# import serial
 import base64
-from bs4 import BeautifulSoup
-from flask import Flask
+# from bs4 import BeautifulSoup
+# from flask import Flask
 import json
 
 
@@ -34,6 +34,13 @@ r = requests.post(TOKEN_URL, data=PARAMS, headers=HEADERS)
 dict = json.loads(r.content)
 print(dict['access_token'])
 
+HEADERS_AUTH = {'Authorization': 'Bearer ' + dict['access_token']}
+r = requests.get('https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V', headers = HEADERS_AUTH)
+#print r.text
+
+parsed_json = json.loads(r.text)
+artists = parsed_json["artists"]
+print(artists[0]["id"])
 
 # r = requests.get(AUTH_URL,params=HEADERS
 # print(r.url)

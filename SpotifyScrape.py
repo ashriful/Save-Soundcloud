@@ -36,8 +36,8 @@ URL = 'https://api.spotify.com'
 # Client ID and Secret are given to developers when they register their app with a website.
 # Spotify needs a base64 encoded response so here we format the authorization information.
 
-CLIENT_ID = 'ab33af147e5b4cf689dae74fa5e21710'
-CLIENT_SECRET = '8fe4c00ac62045e6ac5240b78c62c794'
+CLIENT_ID = 
+CLIENT_SECRET = 
 temp1 = CLIENT_ID + ":"+ CLIENT_SECRET
 temp2 = temp1.encode('utf-8','strict')
 HEADER_64 = base64.standard_b64encode(temp2)

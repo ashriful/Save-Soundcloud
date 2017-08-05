@@ -1,5 +1,15 @@
-# The Spotify Project
-Implement Spotify's Web API to extract and manipulate data. Through this project, the goal is to learn how API's work and how to build applications around user functionality and data visualization. 
+# Save-Soundcloud
+
+Implement Spotify's Web API to extract and manipulate data. Through this project, the goal is to learn how API's work and how to build applications around user functionality and data visualization.
+
+
+## Contributors
+
+- Ash
+- Julian Marks
+- Richa Wadaskar
+
+
 ## Idea #1: Get your Playlist Poppin
 
 [In a 2001 study done by University of Washington,](https://www.youtube.com/watch?v=b6dT4kyVUuY) researchers found a correlation between art and sex. They theorized that much of the books, movies, and music all follow a pattern of build up, climax, and resolution much like in sex. This bell curve like structure is found to be the most appealing and satifyings expereinces for us to consume. So why shouldn't our playlist follow this? 
@@ -32,4 +42,27 @@ Here's a list of Data Science projects that implement Spotify's Web API:
 
 [NYC Data Academy's Project](http://blog.nycdatascience.com/student-works/explorify-visualize-playlists/)
 
+
+# Updates
+
+## 27 July 2017
+
+- First gained authentication through access code
+
+### Goals
+
+- Learn more about API navigation
+	- What are important endpoints and their attributes?
+
+
+## 3 Aug 2017
+
+- Experimented with requests to the Spotify API
+	- How to implement access code
+	- Access to album, artist, and track endpoints
+
+### Goals
+
+- requirements.txt
+- Project Structure and Design
 

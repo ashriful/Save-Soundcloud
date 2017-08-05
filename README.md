@@ -65,4 +65,4 @@ Here's a list of Data Science projects that implement Spotify's Web API:
 
 - requirements.txt
 - Project Structure and Design
-
+- Setup Virtual environment

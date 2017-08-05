@@ -55,8 +55,8 @@ URL = 'https://api.spotify.com'
 # Spotify needs a base64 encoded response so here we format the authorization information.
 >>>>>>> edc08ffb986e0e46f05a9fdce4918abe96c9a81b
 
-CLIENT_ID = 'ab33af147e5b4cf689dae74fa5e21710'
-CLIENT_SECRET = '8fe4c00ac62045e6ac5240b78c62c794'
+CLIENT_ID = 
+CLIENT_SECRET = 
 temp1 = CLIENT_ID + ":"+ CLIENT_SECRET
 temp2 = temp1.encode('utf-8','strict')
 HEADER_64 = base64.standard_b64encode(temp2)

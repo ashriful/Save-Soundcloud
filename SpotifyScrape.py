@@ -1,21 +1,4 @@
-<<<<<<< HEAD
-import requests
-import io
-import os
-import json
-# import time
-# import serial
-import base64
-# from bs4 import BeautifulSoup
-# from flask import Flask
-import json
 
-
-AUTH_URL = 'https://accounts.spotify.com/authorize'
-TOKEN_URL = 'https://accounts.spotify.com/api/token'
-URL = 'https://api.spotify.com'
-REDIRECT_URI = "http://localhost:8888"
-=======
 # Save-Soundcloud v1.0
 # SpotifyScrape.py
 
@@ -53,17 +36,13 @@ URL = 'https://api.spotify.com'
 
 # Client ID and Secret are given to developers when they register their app with a website.
 # Spotify needs a base64 encoded response so here we format the authorization information.
->>>>>>> edc08ffb986e0e46f05a9fdce4918abe96c9a81b
+
 
 CLIENT_ID = 
 CLIENT_SECRET = 
 temp1 = CLIENT_ID + ":"+ CLIENT_SECRET
 temp2 = temp1.encode('utf-8','strict')
 HEADER_64 = base64.standard_b64encode(temp2)
-<<<<<<< HEAD
-CLIENT_AUTH = requests.auth.HTTPBasicAuth(CLIENT_ID,CLIENT_SECRET)
-HEADERS = {'client_id':CLIENT_ID, 'response_type':'code', 'redirect_uri':REDIRECT_URI}
-=======
 PARAMS = {'grant_type':'client_credentials'}				# Requested by Spotify for this particular authorization format
 AUTH_HEADERS = {'Authorization':b'Basic '+HEADER_64}		# Provides base64 authorization with requests, also particular for this authorization format
 
@@ -74,28 +53,10 @@ AUTH_HEADERS = {'Authorization':b'Basic '+HEADER_64}		# Provides base64 authoriz
 # REDIRECT_URI = "http://localhost:8888"   
 # HEADERS = {'client_id':CLIENT_ID, 'response_type':'code', 'redirect_uri':REDIRECT_URI}
 
->>>>>>> edc08ffb986e0e46f05a9fdce4918abe96c9a81b
 
 
 print('Begin Program')
 
-<<<<<<< HEAD
-
-PARAMS = {'grant_type':'client_credentials'}
-HEADERS = {'Authorization':b'Basic '+HEADER_64}
-r = requests.post(TOKEN_URL, data=PARAMS, headers=HEADERS)
-# print(r.headers)
-dict = json.loads(r.content)
-print(dict['access_token'])
-
-HEADERS_AUTH = {'Authorization': 'Bearer ' + dict['access_token']}
-r = requests.get('https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V', headers = HEADERS_AUTH)
-#print r.text
-
-parsed_json = json.loads(r.text)
-artists = parsed_json["artists"]
-print(artists[0]["id"])
-=======
 # Workflow for obtaining a token. Could be written into a function.
 
 r = requests.post(TOKEN_URL, data=PARAMS, headers=AUTH_HEADERS)
@@ -121,7 +82,6 @@ print('\n End Program')
 
 
 #### Scrapped code testing mostly for authorization types
->>>>>>> edc08ffb986e0e46f05a9fdce4918abe96c9a81b
 
 # r = requests.get(AUTH_URL,params=HEADERS
 # print(r.url)

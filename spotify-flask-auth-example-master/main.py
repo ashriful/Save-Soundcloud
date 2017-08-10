@@ -1,3 +1,7 @@
+#Shout out to drshey
+#https://github.com/drshrey/spotify-flask-auth-example
+
+
 import json
 from flask import Flask, request, redirect, g, render_template
 import requests

@@ -1,7 +1,7 @@
 #Shout out to drshey
 #https://github.com/drshrey/spotify-flask-auth-example
 
-
+# Import All Neccesary Modules 
 import json
 from flask import Flask, request, redirect, g, render_template
 import requests
@@ -31,6 +31,8 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 CLIENT_SIDE_URL = "http://127.0.0.1"
 PORT = 8888
 REDIRECT_URI = "{}:{}/callback/q".format(CLIENT_SIDE_URL, PORT)
+
+#Modify Scope to Add in for other functions
 SCOPE = "playlist-modify-public playlist-modify-private"
 STATE = ""
 SHOW_DIALOG_bool = True
@@ -97,7 +99,9 @@ def callback():
     # Combine profile and playlist data to display
     display_arr = [profile_data] + playlist_data["items"]
     return render_template("index.html",sorted_array=display_arr)
-
+    # Grab this data and make a dict of name and id for playlist. Present user with choices of playlist and allow them to choose
+    # Grab api for choosen playlist 
+    # Create array for playlist songs nad info from songs 
 
 if __name__ == "__main__":
     app.run(debug=True,port=PORT)
